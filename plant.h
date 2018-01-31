@@ -2,31 +2,16 @@
 
 #ifndef PLANT_H
 #define STUDENT_H
+#include string
+ 
 class plant() {
 	private:
 		float height;
 		std::string species;
 	public:
-		plant(float h, std::string s) {
-			height = h;
-			species = s;
-		}
-
-		void setSpecies(std::string newSpeciesName) {
-			species = newSpeciesname;
-			return;
-		}
-
-		std::string getSpecies() {
-			return species;
-		}
-
-		void setHeight(float newHeight) {
-			height = newHeight;
-			return;
-		}
-
-		float getHeight() {
-			return height;
-		}
+		plant(float h, std::string s);
+		void setSpecies(std::string newSpeciesName);
+		std::string getSpecies();
+		void setHeight(float newHeight);
+		float getHeight();
 };
