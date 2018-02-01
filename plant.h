@@ -10,6 +10,7 @@ class plant{
 		float height;
 		std::string species;
 	public:
+		plant();
 		plant(float, string);
 		void setSpecies(string);
 		string getSpecies();

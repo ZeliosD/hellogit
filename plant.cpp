@@ -4,6 +4,8 @@
 #include <string>
 using namespace std;
 
+plant::plant(){};
+
 plant::plant(float h, string s) {
 	height = h;
 	species = s;

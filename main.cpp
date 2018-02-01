@@ -9,12 +9,14 @@ using namespace std;
 
 int main() {
 	vector<plant> garden;
+	plant newPlant();
 	string name;
 	float height;
 	for (int i = 0; i<4; i++) {
 		cin >> name;
 		cin >> height;
-		plant newPlant(height, name);
+		newPlant.setHeight(height);
+		newPlant.setSpecies(name);		
 		garden.push_back(newPlant);
 	}
 	for (int i = 0; i<garden.size(); i++) {
