@@ -2,16 +2,18 @@
 
 #ifndef PLANT_H
 #define STUDENT_H
-#include string
+#include <string>
+using namespace std;
  
-class plant() {
+class plant{
 	private:
 		float height;
 		std::string species;
 	public:
-		plant(float h, std::string s);
-		void setSpecies(std::string newSpeciesName);
-		std::string getSpecies();
-		void setHeight(float newHeight);
+		plant(float, string);
+		void setSpecies(string);
+		string getSpecies();
+		void setHeight(float);
 		float getHeight();
 };
+#endif

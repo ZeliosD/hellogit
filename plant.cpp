@@ -1,18 +1,20 @@
 //plant.cpp
 
-include 'plant.h'
+#include "plant.h"
+#include <string>
+using namespace std;
 
-plant::plant(float h, std::string s) {
+plant::plant(float h, string s) {
 	height = h;
 	species = s;
 }
 
-void plant::setSpecies(std::string newSpeciesName) {
-	species = newSpeciesname;
+void plant::setSpecies(string newSpeciesName) {
+	species = newSpeciesName;
 	return;
 }
 
-std::string plant::getSpecies() {
+string plant::getSpecies() {
 	return species;
 }
 

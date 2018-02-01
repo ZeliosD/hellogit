@@ -2,25 +2,26 @@
 
 #include <iostream>
 #include <vector>
-#include 'plant.h'
+#include <string>
+#include "plant.h"
 
 using namespace std;
 
-main() {
-	vector <plant> garden;
-	plant newPlant;
+int main() {
+	vector<plant> garden;
 	string name;
 	float height;
 	for (int i = 0; i<4; i++) {
 		cin >> name;
 		cin >> height;
-		garden.push_back(plant newPlant(height, name));
+		plant newPlant(height, name);
+		garden.push_back(newPlant);
 	}
-	for (int i = 0; i<garden.size(); i_++) {
-		cout << garden[i]<<endl;
+	for (int i = 0; i<garden.size(); i++) {
+		cout << garden[i].getHeight() << endl;
 	}
 	for (int i = 0; i<garden.size(); i++) {
 		garden.pop_back();
 	}
-return;
+return 0;
 }
